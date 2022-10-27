@@ -94,7 +94,7 @@ const LoginScreen = ({navigation}) => {
                         value = {values.password}
                     />
                 </View>
-                <Button onPress={handleSubmit} title="Submit" />
+                <Button onPress={handleSubmit} title="Submit"/>
             </>
 
             )}
