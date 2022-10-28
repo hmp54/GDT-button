@@ -1,5 +1,5 @@
 import {StyleSheet} from 'react-native';
-import React, {useState, useEffect} from 'react'; 
+import React, {useState, useEffect, Component} from 'react'; 
 import { NavigationContainer } from '@react-navigation/native';
 import {createNativeStackNavigator} from '@react-navigation/native-stack'; 
 import {EventRegister} from 'react-native-event-listeners'; 
@@ -13,6 +13,8 @@ const screenOptions = {
   headerShown: false,
 };
 
+
+
 export default function App() {
   {/*//launches database server on initialization of app.
   //empty array list ensure that this codeo only executes once 
@@ -23,15 +25,26 @@ export default function App() {
     }
     const focusListener = EventRegister.addEventListener('didFocus', onFocus); 
     return () => focusListener.remove(); 
-  }, []); */}
+  }, []); 
 
-  const express = require('express'); 
+const express = require('express'); 
   const mysql = require('mysql');
 
-  const app = express(); 
   app.listen('3000', () =>{ 
       console.log('server started on port 3000'); 
+  }); */}
+
+
+  useEffect(() =>{
+    const mysql = require('mysql');
+    const express = require('express');
+    /*var app = express();
+
+    app.listen('3000', () =>{ 
+      console.log('server started on port 3000'); 
+    });*/ 
   }); 
+
 
   return (
     <NavigationContainer>
